@@ -5,6 +5,7 @@ function sleep(ms) {
 async function main() {
   while(true) {
     console.log('Containers rule!');
+    console.log(`My docker hub username is ${process.env.DOCKER_USERNAME}`);
     await sleep(5000);
   }
 }
